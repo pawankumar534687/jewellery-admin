@@ -19,7 +19,7 @@ const CreateCoupon = () => {
     const token = localStorage.getItem("token");
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/create-coupon",
+        "https://jewellery-backend-km3b.onrender.com/api/create-coupon",
         data,
         {
           headers: {

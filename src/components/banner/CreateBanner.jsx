@@ -57,7 +57,7 @@ const CreateBanner = () => {
     const token = localStorage.getItem("token");
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/create-banner",
+        "https://jewellery-backend-km3b.onrender.com/api/create-banner",
         form,
         {
           headers: {

@@ -19,7 +19,7 @@ const EditCategory = () => {
       const editcouponform = async () => {
         const token = localStorage.getItem("token")
         const response = await axios.get(
-          `http://localhost:8000/api/edit-category-form/${id}`, {
+          `https://jewellery-backend-km3b.onrender.com/api/edit-category-form/${id}`, {
           headers:{
             Authorization: `Bearer ${token}`
           }
@@ -33,7 +33,7 @@ const EditCategory = () => {
     const onsubmit = async (data) => {
       const token = localStorage.getItem("token")
       const response = await axios.put(
-        `http://localhost:8000/api/edit-category/${id}`,
+        `https://jewellery-backend-km3b.onrender.com/api/edit-category/${id}`,
         data, {
           headers:{
             Authorization: `Bearer ${token}`

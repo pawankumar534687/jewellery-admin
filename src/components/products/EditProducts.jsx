@@ -36,7 +36,7 @@ const EditProducts = () => {
   useEffect(() => {
     const fetchCategories = async () => {
       const token = localStorage.getItem("token");
-      const res = await axios.get("http://localhost:8000/api/get-category", {
+      const res = await axios.get("https://jewellery-backend-km3b.onrender.com/api/get-category", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -46,7 +46,7 @@ const EditProducts = () => {
     const fetchSubCategories = async () => {
       const token = localStorage.getItem("token");
       const res = await axios.get(
-        "http://localhost:8000/api/get-sub-category",
+        "https://jewellery-backend-km3b.onrender.com/api/get-sub-category",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -63,7 +63,7 @@ const EditProducts = () => {
     const fetchProduct = async () => {
       const token = localStorage.getItem("token");
       const res = await axios.get(
-        `http://localhost:8000/api/detaildProduct/${id}`,
+        `https://jewellery-backend-km3b.onrender.com/api/detaildProduct/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -104,7 +104,7 @@ const EditProducts = () => {
       });
       const token = localStorage.getItem("token");
       await axios.put(
-        `http://localhost:8000/api/edit-product/${id}`,
+        `https://jewellery-backend-km3b.onrender.com/api/edit-product/${id}`,
 
         formData,
         {

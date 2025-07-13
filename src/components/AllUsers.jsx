@@ -5,7 +5,7 @@ const AllUsers = () => {
   const [alluser, setalluser] = useState([]);
   const getusers = async () => {
     const token = localStorage.getItem("token");
-    const response = await axios.get("http://localhost:8000/api/getusers", {
+    const response = await axios.get("https://jewellery-backend-km3b.onrender.com/api/getusers", {
       headers: {
         Authorization: `Bearer ${token}`,
       },

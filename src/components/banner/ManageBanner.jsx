@@ -11,7 +11,7 @@ const ManageBanner = () => {
 
   const getallbanner = async () => {
     const token = localStorage.getItem("token");
-    const response = await axios.get("http://localhost:8000/api/getallbanner", {
+    const response = await axios.get("https://jewellery-backend-km3b.onrender.com/api/getallbanner", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -28,7 +28,7 @@ const ManageBanner = () => {
     const token = localStorage.getItem("token");
     try {
       const response = await axios.delete(
-        `http://localhost:8000/api/deletebanner/${id}`,
+        `https://jewellery-backend-km3b.onrender.com/api/deletebanner/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

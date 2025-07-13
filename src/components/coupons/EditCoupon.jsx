@@ -20,7 +20,7 @@ const EditCoupon = () => {
     const editcouponform = async () => {
       const token = localStorage.getItem("token");
       const response = await axios.get(
-        `http://localhost:8000/api/edit-coupon-form/${id}`,
+        `https://jewellery-backend-km3b.onrender.com/api/edit-coupon-form/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -37,7 +37,7 @@ const EditCoupon = () => {
     setLoading(true);
     try {
       const response = await axios.put(
-        `http://localhost:8000/api/edit-coupon/${id}`,
+        `https://jewellery-backend-km3b.onrender.com/api/edit-coupon/${id}`,
         data,
         {
           headers: {

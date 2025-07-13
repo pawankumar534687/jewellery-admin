@@ -12,7 +12,7 @@ const ManageCupans = () => {
 
   const getcoupons = async () => {
     const token = localStorage.getItem("token");
-    const response = await axios.get("http://localhost:8000/api/get-coupons", {
+    const response = await axios.get("https://jewellery-backend-km3b.onrender.com/api/get-coupons", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -25,7 +25,7 @@ const ManageCupans = () => {
     const token = localStorage.getItem("token");
     try {
       const response = await axios.delete(
-        `http://localhost:8000/api/delete-coupon/${id}`, {
+        `https://jewellery-backend-km3b.onrender.com/api/delete-coupon/${id}`, {
           headers:{
             Authorization: `Bearer ${token}`
           }

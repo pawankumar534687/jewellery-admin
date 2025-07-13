@@ -14,7 +14,7 @@ const AllProducts = () => {
   const getallproduct = async () => {
     const token = localStorage.getItem("token");
     const response = await axios.get(
-      "http://localhost:8000/api/get-all-product",
+      "https://jewellery-backend-km3b.onrender.com/api/get-all-product",
       {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -44,7 +44,7 @@ const AllProducts = () => {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.delete(
-        `http://localhost:8000/api/delete-product/${id}`,
+        `https://jewellery-backend-km3b.onrender.com/api/delete-product/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

@@ -10,7 +10,7 @@ const AllMessages = () => {
   const getmessage = async () => {
     const token = localStorage.getItem("token");
     const response = await axios.get(
-      "http://localhost:8000/api/all-inquiries",
+      "https://jewellery-backend-km3b.onrender.com/api/all-inquiries",
       {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -25,7 +25,7 @@ const AllMessages = () => {
     const token = localStorage.getItem("token");
     try {
       const response = await axios.delete(
-        `http://localhost:8000/api/delete-message/${id}`,
+        `https://jewellery-backend-km3b.onrender.com/api/delete-message/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

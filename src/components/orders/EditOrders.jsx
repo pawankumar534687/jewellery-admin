@@ -17,7 +17,7 @@ const EditOrders = () => {
       try {
         const token = localStorage.getItem("token");
         const response = await axios.get(
-          `http://localhost:8000/api/order-details/${id}`,
+          `https://jewellery-backend-km3b.onrender.com/api/order-details/${id}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -40,7 +40,7 @@ const EditOrders = () => {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.put(
-        `http://localhost:8000/api/update-order/${id}`,
+        `https://jewellery-backend-km3b.onrender.com/api/update-order/${id}`,
         {
           Orderstatus: orderStatus,
           paymentStatus: paymentStatus,

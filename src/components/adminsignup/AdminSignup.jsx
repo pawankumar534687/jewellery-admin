@@ -16,7 +16,7 @@ const AdminSignup = () => {
   const onSubmit = async (data) => {
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/admin-login",
+        "https://jewellery-backend-km3b.onrender.com/api/admin-login",
         data
       );
 

@@ -23,7 +23,7 @@ const EditBanner = () => {
       const token = localStorage.getItem("token");
       try {
         const res = await axios.get(
-          `http://localhost:8000/api/get-banner/${id}`,
+          `https://jewellery-backend-km3b.onrender.com/api/get-banner/${id}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -89,7 +89,7 @@ const EditBanner = () => {
 
     try {
       const res = await axios.put(
-        `http://localhost:8000/api/update-banner/${id}`,
+        `https://jewellery-backend-km3b.onrender.com/api/update-banner/${id}`,
         form,
         {
           headers: {

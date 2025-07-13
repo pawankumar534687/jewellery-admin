@@ -11,7 +11,7 @@ const AllCategory = () => {
 
   const getallcategory = async () => {
     const token = localStorage.getItem("token");
-    const response = await axios.get("http://localhost:8000/api/get-category", {
+    const response = await axios.get("https://jewellery-backend-km3b.onrender.com/api/get-category", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -24,7 +24,7 @@ const AllCategory = () => {
     const token = localStorage.getItem("token");
     try {
       const response = await axios.delete(
-        `http://localhost:8000/api/delete-category/${id}`,
+        `https://jewellery-backend-km3b.onrender.com/api/delete-category/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

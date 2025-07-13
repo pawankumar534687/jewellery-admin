@@ -39,7 +39,7 @@ const CreateProduct = () => {
     const getsubcategory = async () => {
       const token = localStorage.getItem("token");
       const response = await axios.get(
-        "http://localhost:8000/api/get-sub-category",
+        "https://jewellery-backend-km3b.onrender.com/api/get-sub-category",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -67,7 +67,7 @@ const CreateProduct = () => {
       }
       const token = localStorage.getItem("token");
       const res = await axios.post(
-        "http://localhost:8000/api/create-product",
+        "https://jewellery-backend-km3b.onrender.com/api/create-product",
         formData,
         {
           headers: {
@@ -103,7 +103,7 @@ const CreateProduct = () => {
     const getallcategory = async () => {
       const token = localStorage.getItem("token");
       const response = await axios.get(
-        "http://localhost:8000/api/get-category",
+        "https://jewellery-backend-km3b.onrender.com/api/get-category",
         {
           headers: {
             Authorization: `Bearer ${token}`,

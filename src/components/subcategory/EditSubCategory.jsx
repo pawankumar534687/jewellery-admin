@@ -27,7 +27,7 @@ const EditSubCategory = () => {
     const getallcategory = async () => {
       const token = localStorage.getItem("token");
       const response = await axios.get(
-        "http://localhost:8000/api/get-category",
+        "https://jewellery-backend-km3b.onrender.com/api/get-category",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -60,7 +60,7 @@ const EditSubCategory = () => {
     const token = localStorage.getItem("token");
     try {
       const response = await axios.put(
-        `http://localhost:8000/api/edit-subcategory/${id}`,
+        `https://jewellery-backend-km3b.onrender.com/api/edit-subcategory/${id}`,
         formData,
         {
           headers: {
@@ -90,7 +90,7 @@ const EditSubCategory = () => {
     const editsubcategory = async () => {
       const token = localStorage.getItem("token");
       const response = await axios.get(
-        `http://localhost:8000/api/get-sub-category-form/${id}`,
+        `https://jewellery-backend-km3b.onrender.com/api/get-sub-category-form/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

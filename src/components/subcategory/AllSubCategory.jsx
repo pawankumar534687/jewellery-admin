@@ -11,7 +11,7 @@ const AllSubCategory = () => {
   const getsubcategory = async () => {
     const token = localStorage.getItem("token");
     const response = await axios.get(
-      "http://localhost:8000/api/get-sub-category",
+      "https://jewellery-backend-km3b.onrender.com/api/get-sub-category",
       {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -30,7 +30,7 @@ const AllSubCategory = () => {
     const token = localStorage.getItem("token");
     try {
       const response = await axios.delete(
-        `http://localhost:8000/api/delete-subcategory/${id}`,
+        `https://jewellery-backend-km3b.onrender.com/api/delete-subcategory/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

@@ -23,7 +23,7 @@ const CreateSubCategory = () => {
     const getallcategory = async () => {
       const token = localStorage.getItem("token");
       const response = await axios.get(
-        "http://localhost:8000/api/get-category",
+        "https://jewellery-backend-km3b.onrender.com/api/get-category",
         {
           headers: {
             Authorization: `Bearer ${token}`,
